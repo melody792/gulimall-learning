@@ -11,7 +11,7 @@ spring:
   cloud:
       nacos:
         discovery:
-          server-addr: #nacos注册中心地址
+          server-addr: 192.168.56.1:8848 #nacos注册中心地址
       # 文件上传秘钥
       alicloud:
         access-key: #
@@ -35,7 +35,7 @@ spring:
   thymeleaf:
     cache: false
   redis:
-    host: 192.168.56.102
+    host: 192.168.56.10
     port: 6379
   cache:
     type: redis
@@ -69,7 +69,6 @@ gulimall:
     corePoolSize: 10
     maxPoolSize: 20
     keepAliveTime: 300
-<<<<<<< HEAD
 management:
   endpoints:
     web:
@@ -78,5 +77,3 @@ management:
 feign:
   sentinel:
     enabled: true
-=======
->>>>>>> 9e4857d66f652e179bc55f579092d12e93ed463a

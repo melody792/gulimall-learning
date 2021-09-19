@@ -1,7 +1,7 @@
 spring:
   datasource:
     username: root
-    password: root
+    password: pzhbao
     url: jdbc:mysql://#:3306/gulimall_sms
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
@@ -12,7 +12,7 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: #nacos注册中心地址
+        server-addr: 192.168.56.1:8848 #nacos注册中心地址
     sentinel:
       transport:
         dashboard: localhost:8080
